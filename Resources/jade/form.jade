@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		title Fantastic Form
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="../bower_components/html5-reset/assets/css/reset.css")
+		link(rel="stylesheet", href="styles/style.css")
+	body
+		#wrapper
+			#form
+				h1 Fantastic Form
+				fielset#signup
+					legend - Sign Up -
+					.input-box
+						label.fill_(for="name") Name
+						input(type="text", name="name")
+					.input-box
+						label.fill_(for="email") Email
+						input(type="email", name="email")
+					.input-box
+						label.fill_(for="password") Password
+						input(type="password", name="password")
+					.input-box
+						label.fill_(for="again") Again
+						input(type="password", name="again")
+					a.fill_.button(href="#") Send Form
+					span.links: a(href="#") Log In
+				fielset#login(style="display:none")
+					legend - Log In -
+					.input-box
+						label.fill_(for="email") Email
+						input(type="text", name="email")
+					.input-box
+						label.fill_(for="password") Password
+						input(type="password", name="password")
+					a.fill_.button(href="#") Sing In
+					span.links: a(href="#") Register
+				span.copy &copy Andres Alarcon 2015

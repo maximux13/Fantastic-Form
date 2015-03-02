@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'moonbold';
+  src: url('../fonts/Moon Bold-webfont.eot');
+  src: url('../fonts/Moon Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Moon Bold-webfont.woff2') format('woff2'), url('../fonts/Moon Bold-webfont.woff') format('woff'), url('../fonts/Moon Bold-webfont.ttf') format('truetype'), url('../fonts/Moon Bold-webfont.svg#moonbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'moonlight';
+  src: url('../fonts/Moon Light-webfont.eot');
+  src: url('../fonts/Moon Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Moon Light-webfont.woff2') format('woff2'), url('../fonts/Moon Light-webfont.woff') format('woff'), url('../fonts/Moon Light-webfont.ttf') format('truetype'), url('../fonts/Moon Light-webfont.svg#moonlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: url("../images/bg.png"), tomato;
+  font-size: 14px;
+  font-family: 'moonbold';
+}
+a {
+  text-decoration: none;
+}
+.fill_ {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  background: tomato;
+  color: white;
+  text-align: left;
+  padding: 17.5px 0 17.5px 6px;
+  width: 70px;
+  text-shadow: 0 1px 2px rgba(255, 99, 71, 0.15);
+  font-size: 11px;
+}
+.fill_:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  right: -16px;
+  width: 0;
+  height: 0;
+  border-bottom: 48px solid tomato;
+  border-right: 16px solid transparent;
+  image-rendering: pixelated;
+}
+#wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#wrapper #form {
+  width: 600px;
+  text-align: center;
+}
+#wrapper #form h1 {
+  display: block;
+  font-size: 32px;
+  color: white;
+  text-shadow: 0 2px 0 #ad1a00;
+  margin: 32px 0 42px ;
+}
+#wrapper #form fielset {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  display: block;
+  background: white;
+  width: 330px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 19px;
+  outline: rgba(0, 0, 0, 0.08) 5px solid;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: left;
+  height: 375px;
+  max-height: 375px;
+}
+#wrapper #form fielset legend {
+  display: block;
+  color: #ad1a00;
+  padding: 0 0 15px;
+  text-align: center;
+}
+#wrapper #form fielset .input-box {
+  position: relative;
+  width: 290px;
+}
+#wrapper #form fielset .input-box input {
+  border: none;
+  border-bottom: 2px solid tomato;
+  padding: 15.5px 0 15.5px 105px;
+  width: 100%;
+  margin: 0 0 12px;
+  outline: none;
+  font-family: 'moonbold';
+}
+#wrapper #form fielset .input-box input[type="password"] {
+  letter-spacing: 2px;
+}
+#wrapper #form fielset a.button {
+  display: inline-block;
+  position: relative;
+  margin: 15px 0 0 -15px;
+  width: 170px;
+  text-align: center;
+  box-shadow: -5px 0 0 rgba(255, 56, 20, 0.5);
+  cursor: pointer;
+}
+#wrapper #form fielset span.links a {
+  font-family: Helvetica;
+  font-size: 12px;
+  margin-left: 80px;
+  text-align: right;
+  color: #ad1a00;
+  font-weight: bold;
+}
+#wrapper #form span.copy {
+  font-size: 10px;
+  color: white;
+}
